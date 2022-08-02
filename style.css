@@ -35,6 +35,8 @@ body {
   background-color: var(--white);
   height: 400px;
   max-width: 550px;
+  margin-left: 20px;
+  margin-right: 20px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -133,6 +135,17 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+  .card-container {
+    flex-direction: column;
+    height: 620px;
+  }
+  .card-image,
+  .card-copy {
+    width: 100%;
+  }
 }
 
 /* Disclaimer */
